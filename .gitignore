@@ -1,0 +1,15 @@
+# Data
+*.csv
+*.CSV
+data/
+
+# Python envs
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS junk
+.DS_Store
+Thumbs.db
