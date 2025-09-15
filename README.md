@@ -40,7 +40,7 @@ To tackle this, we explored **Gaussian Mixture Model (GMM)-based synthetic overs
 
 ---
 
-## 📊 Results
+## Results
 
 Both models were trained on the rebalanced sets and evaluated on the **original imbalanced test set** (56,864 majority, 98 minority).  
 
@@ -52,7 +52,7 @@ Both models were trained on the rebalanced sets and evaluated on the **original 
 
 ---
 
-## 📝 Analysis
+## Analysis
 - **Baseline:** Logistic Regression on imbalanced data fails to detect the minority class.  
 - **GMM-only oversampling:** Excellent recall (~90%), but very low precision. The model detects almost all frauds but with many false alarms.  
 - **CBU + GMM:** Slightly lower recall but improved precision and F1. Also reduced training size (90k vs. 450k), making the approach more efficient.  
@@ -62,7 +62,7 @@ Oversampling with GMM improves the model’s ability to learn the minority distr
 
 ---
 
-## ✅ Recommendation
+## Recommendation
 We recommend using **CBU + GMM (Part B.4)** for this dataset.  
 - It achieves a **better F1-score** for the minority class.  
 - Provides a balanced trade-off between precision and recall.  
